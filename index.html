@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Concessionárias - Escolha o Estado</title>
+    <link rel="stylesheet" href="css/home.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Concessionárias - Dashboard ANEEL</h1>
+      <nav>
+        <a href="index.html">Escolher Estado</a>
+        <a href="table.html">Tabela</a>
+        <a href="charts.html">Gráficos</a>
+      </nav>
+    </header>
+    <main>
+      <section class="intro">
+        <h2>Sobre a ANEEL</h2>
+        <p>
+          A Agência Nacional de Energia Elétrica (ANEEL) regula e fiscaliza o
+          fornecimento de energia no Brasil. Nosso objetivo com essa página é
+          fornecer acesso fácil e interativo aos dados das concessionárias de
+          energia de cada estado.
+        </p>
+        <p>
+          Utilize o menu abaixo para selecionar um estado e visualizar dados de
+          reclamações, eficiência no atendimento e outras informações
+          relevantes.
+        </p>
+      </section>
+      <section class="search-box">
+        <h2>Escolha o Estado</h2>
+        <select id="stateSelect">
+          <option value="">Selecione</option>
+          <option value="AC">Acre</option>
+          <option value="AL">Alagoas</option>
+          <option value="AM">Amazonas</option>
+          <option value="AP">Amapá</option>
+          <option value="BA">Bahia</option>
+          <option value="CE">Ceará</option>
+          <option value="DF">Distrito Federal</option>
+          <option value="ES">Espírito Santo</option>
+          <option value="GO">Goiás</option>
+          <option value="MA">Maranhão</option>
+          <option value="MG">Minas Gerais</option>
+          <option value="MS">Mato Grosso do Sul</option>
+          <option value="MT">Mato Grosso</option>
+          <option value="PA">Pará</option>
+          <option value="PB">Paraíba</option>
+          <option value="PE">Pernambuco</option>
+          <option value="PI">Piauí</option>
+          <option value="PR">Paraná</option>
+          <option value="RJ">Rio de Janeiro</option>
+          <option value="RN">Rio Grande do Norte</option>
+          <option value="RO">Rondônia</option>
+          <option value="RR">Roraima</option>
+          <option value="RS">Rio Grande do Sul</option>
+          <option value="SC">Santa Catarina</option>
+          <option value="SE">Sergipe</option>
+          <option value="SP">São Paulo</option>
+          <option value="TO">Tocantins</option>
+        </select>
+        <button onclick="navigateToTable()">Ver Dados</button>
+      </section>
+    </main>
+    <script src="js/stateManager.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

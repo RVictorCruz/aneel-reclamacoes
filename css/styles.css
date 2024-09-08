@@ -1,0 +1,47 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ddd;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
+canvas {
+  width: 100%;
+  max-width: 1200px;
+  height: 100px;
+}

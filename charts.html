@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gráficos</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Concessionárias - Dashboard</h1>
+      <nav>
+        <a href="index.html">Escolher Estado</a>
+        <a href="table.html">Tabela</a>
+        <a href="charts.html">Gráficos</a>
+      </nav>
+    </header>
+    <main>
+      <h2>Gráfico de Barras: Reclamações Recebidas vs. Procedentes</h2>
+      <canvas id="barChart"></canvas>
+
+      <h2>
+        Gráfico de Pizza: Distribuição de Reclamações Recebidas por Município
+      </h2>
+      <canvas id="pieChart"></canvas>
+
+      <h2>Gráfico de Rosquinha: Procedência de Reclamações por Município</h2>
+      <canvas id="doughnutChart"></canvas>
+
+      <h2>
+        Gráfico de Linha: Tendência de Reclamações Recebidas ao Longo do Tempo
+      </h2>
+      <canvas id="lineChart"></canvas>
+    </main>
+    <script src="js/stateManager.js"></script>
+    <script src="js/charts.js"></script>
+  </body>
+</html>

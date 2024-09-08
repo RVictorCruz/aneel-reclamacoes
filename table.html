@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabela de Dados</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Tabela de Reclamações por Estado</h1>
+      <nav>
+        <a href="index.html">Escolher Estado</a>
+        <a href="table.html">Tabela</a>
+        <a href="charts.html">Gráficos</a>
+      </nav>
+    </header>
+    <main>
+      <table id="dataTable">
+        <thead>
+          <tr>
+            <th>Agente</th>
+            <th>Município</th>
+            <th>Reclamação</th>
+            <th>Reclamações Procedentes</th>
+            <th>Prazo Médio de Solução</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Dados da tabela serão preenchidos aqui -->
+        </tbody>
+      </table>
+    </main>
+    <script src="js/stateManager.js"></script>
+    <!-- Carregar primeiro -->
+    <script src="js/table.js"></script>
+    <!-- Carregar depois -->
+  </body>
+</html>
