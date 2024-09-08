@@ -11,7 +11,14 @@ Menu de Navegação: Todas as páginas possuem um menu lateral para navegação 
 - CSS3: Estilos e layout.
 - JavaScript (ES6): Manipulação de dados e integração com a API.
 - Chart.js: Biblioteca de gráficos para gerar visualizações dinâmicas.
-  
+   
+  <div style="display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 300px; 
+    border: 1px solid #ccc;">
+    <img src = "https://github.com/user-attachments/assets/b83f2475-4ba7-465e-a5bb-6e22138b660a" alt= "Página inicial">
+  </div>
 API REST: A aplicação consome dados de uma API REST que retorna informações das concessionárias por estado.
 Estrutura do Projeto
 A estrutura do projeto é organizada da seguinte forma:
@@ -84,7 +91,23 @@ Se você precisar alterar a URL da API ou adicionar novas funcionalidades, basta
   
 javascript  
 Copiar código  
-``` fetch(`http://localhost:3000/api/concessionarias/uf/${state}`) ```
+``` fetch(`http://localhost:3000/api/concessionarias/uf/${state}`) ```  
+  
+<div style="display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 300px; 
+    border: 1px solid #ccc;">
+    <img src = "https://github.com/user-attachments/assets/caed6f09-f7f5-4bbb-9f9b-9776c0beba9f" alt= "Página inicial">
+  </div>
+
+  <div style="display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 300px; 
+    border: 1px solid #ccc;">
+    <img src = "https://github.com/user-attachments/assets/48e602b0-23b6-4fa4-b72f-baad58a932d9" alt= "Página inicial">
+  </div>
 ## Problemas Conhecidos
 - Certifique-se de que a API está rodando e acessível localmente na porta 3000, caso contrário, os dados não serão carregados nas páginas de tabela e gráficos.
 - Caso algum dado esteja incorreto ou desatualizado, verifique a resposta da API para garantir que está no formato esperado.
