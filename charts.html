@@ -17,6 +17,12 @@
       </nav>
     </header>
     <main>
+      <!-- Animação de carregamento -->
+      <div id="loading" class="loading">
+        <div class="spinner"></div>
+        <p>Carregando dados, por favor aguarde...</p>
+      </div>
+
       <h2>Gráfico de Barras: Reclamações Recebidas vs. Procedentes</h2>
       <canvas id="barChart"></canvas>
 
@@ -33,6 +39,7 @@
       </h2>
       <canvas id="lineChart"></canvas>
     </main>
+
     <script src="js/stateManager.js"></script>
     <script src="js/charts.js"></script>
   </body>

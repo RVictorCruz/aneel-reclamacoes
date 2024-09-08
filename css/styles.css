@@ -45,3 +45,47 @@ canvas {
   max-width: 1200px;
   height: 100px;
 }
+/* Estilo para o loading */
+.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #333;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Adiciona um fundo semi-transparente */
+  border-radius: 8px; /* Adiciona bordas arredondadas */
+  padding: 20px; /* Adiciona algum espaço interno */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra ao redor do loading */
+}
+
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #52d0f4;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 10px; /* Adiciona um espaço entre o spinner e o texto */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+p {
+  margin-right: 0px;
+}

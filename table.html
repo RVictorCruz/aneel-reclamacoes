@@ -16,7 +16,13 @@
       </nav>
     </header>
     <main>
-      <table id="dataTable">
+      <!-- Animação de carregamento -->
+      <div id="loading" class="loading">
+        <div class="spinner"></div>
+        <p>Carregando dados, por favor aguarde...</p>
+      </div>
+
+      <table id="dataTable" style="display: none">
         <thead>
           <tr>
             <th>Agente</th>
@@ -31,9 +37,8 @@
         </tbody>
       </table>
     </main>
+
     <script src="js/stateManager.js"></script>
-    <!-- Carregar primeiro -->
     <script src="js/table.js"></script>
-    <!-- Carregar depois -->
   </body>
 </html>

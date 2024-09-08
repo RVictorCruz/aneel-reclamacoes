@@ -3,6 +3,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (state) {
     console.log(state);
+
+    // Exibe o loading
+    const loadingElement = document.getElementById("loading");
+    const tableElement = document.getElementById("dataTable");
+    loadingElement.style.display = "block";
+    tableElement.style.display = "none";
+
+    // Busca os dados
     fetch(
       `https://api-aneel-reclamacoes.vercel.app/api/concessionarias/uf/${state}`
     )
@@ -10,8 +18,15 @@ document.addEventListener("DOMContentLoaded", () => {
       .then((data) => {
         const filteredData = data.filter((item) => item.SigUF === state);
         populateTable(filteredData);
+
+        // Esconde o loading e mostra a tabela
+        loadingElement.style.display = "none";
+        tableElement.style.display = "table";
       })
-      .catch((error) => console.error("Erro ao buscar dados:", error));
+      .catch((error) => {
+        console.error("Erro ao buscar dados:", error);
+        loadingElement.style.display = "none";
+      });
   } else {
     console.error("Nenhum estado foi selecionado.");
   }
